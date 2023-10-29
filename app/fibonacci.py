@@ -1,4 +1,5 @@
 ## https://gist.github.com/naisu-dev/843d4ab597325731a285d3d60e1504e0#file-fibonacci-py
+## https://replit.com/@naisu-dev/fibonacci-sequence?s=app
 
 def fibonacci(x :int,y: int,count: int):
   z = [x, y]
