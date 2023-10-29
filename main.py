@@ -15,6 +15,7 @@ def main():
     except:
       return abort(400,"Argument Error")
 ## https://example.com/fibonacci/?x=1&y=1&count=10
+## https://github.com/naisu-dev/naisumath/blob/main/app/fibonacci.py
 
 @app.route("/aliquot/",methods=["GET"])
 def main():
@@ -41,6 +42,7 @@ def main():
     except:
       return abort(400,"Argument Error")
 ## https://example.com/aliquot/?x=12
+## https://github.com/naisu-dev/naisumath/blob/main/app/aliquot.py
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0",port=4000)
