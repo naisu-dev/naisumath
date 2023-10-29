@@ -14,7 +14,7 @@ def main():
       return z
     except:
       return abort(400,"Argument Error")
-## https://example.com/fibonacci?x=1&y=1&count=10
+## https://example.com/fibonacci/?x=1&y=1&count=10
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0",port=4000)
