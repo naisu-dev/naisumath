@@ -2,7 +2,7 @@ from flask import Flask, request, abort
 
 app = Flask(__name__)
 
-@app.route("/",methods=["GET"])
+@app.route("/fibonacci",methods=["GET"])
 def main():
     try:
       x = int(request.args.get("x"))
