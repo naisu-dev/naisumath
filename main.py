@@ -16,6 +16,7 @@ def main():
       return abort(400,"Argument Error")
 ## https://example.com/fibonacci/?x=1&y=1&count=10
 ## https://github.com/naisu-dev/naisumath/blob/main/app/fibonacci.py
+## https://replit.com/@naisu-dev/fibonacci-sequence?s=app
 
 @app.route("/aliquot/",methods=["GET"])
 def main():
@@ -43,6 +44,7 @@ def main():
       return abort(400,"Argument Error")
 ## https://example.com/aliquot/?x=12
 ## https://github.com/naisu-dev/naisumath/blob/main/app/aliquot.py
+## https://replit.com/@naisu-dev/aliquot-sequence?s=app
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0",port=4000)
