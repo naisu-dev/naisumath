@@ -1,4 +1,5 @@
 ## https://gist.github.com/naisu-dev/3dc80fe92c14cae66817f6051d4743e8
+## https://replit.com/@naisu-dev/fibonacci-sequence?s=app
 
 def aliquot(x :int):
   z = [i for i in range(1, x+1) if x % i ==0]
