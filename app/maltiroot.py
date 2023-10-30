@@ -1,6 +1,5 @@
 ## https://gist.github.com/naisu-dev/b0a5b5227ee31b8875694ca818132ac7
-## 
-https://replit.com/@naisu-dev/multiroot?s=app
+## https://replit.com/@naisu-dev/multiroot?s=app
 def maltiroot(x:int, y:int):
   z = x**(1/y)
   return round(z)
