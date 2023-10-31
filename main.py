@@ -46,7 +46,7 @@ def main():
 ## https://github.com/naisu-dev/naisumath/blob/main/app/aliquot.py
 ## https://replit.com/@naisu-dev/aliquot-sequence?s=app
 
-@app.route("/",methods=["GET"])
+@app.route("/maltiroot/",methods=["GET"])
 def main():
     try:
       x = int(request.args.get("x"))
@@ -59,6 +59,8 @@ def main():
     except:
       return abort(400,"Argument Error")
 ## https://example.com/?x=27&y=3
+## https://github.com/naisu-dev/naisumath/blob/main/app/maltiroot.py
+## https://replit.com/@naisu-dev/multiroot?s=app
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0",port=4000)
