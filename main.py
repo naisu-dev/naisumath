@@ -46,5 +46,19 @@ def main():
 ## https://github.com/naisu-dev/naisumath/blob/main/app/aliquot.py
 ## https://replit.com/@naisu-dev/aliquot-sequence?s=app
 
+@app.route("/",methods=["GET"])
+def main():
+    try:
+      x = int(request.args.get("x"))
+      y = int(request.args.get("y"))
+      z = x**(1/y)
+      if x == z**y:
+        return round(z)
+      else:
+        return z
+    except:
+      return abort(400,"Argument Error")
+## https://example.com/?x=27&y=3
+
 if __name__ == "__main__":
   app.run(host="0.0.0.0",port=4000)
