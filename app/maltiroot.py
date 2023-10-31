@@ -1,11 +1,14 @@
 ## https://gist.github.com/naisu-dev/b0a5b5227ee31b8875694ca818132ac7
 ## https://replit.com/@naisu-dev/multiroot?s=app
 
-def maltiroot(x:int, y:int):
+def malti_root(x:int, y:int):
   z = x**(1/y)
-  return round(z)
+  if x == z**y:
+    return round(z)
+  else:
+    return z
 
-## print(maltiroot(64, 3))
+## print(malti_root(64, 3))
 
 from flask import Flask, request, abort
 
@@ -17,7 +20,10 @@ def main():
       x = int(request.args.get("x"))
       y = int(request.args.get("y"))
       z = x**(1/y)
-      return round(z)
+      if x == z**y:
+        return round(z)
+      else:
+        return z
     except:
       return abort(400,"Argument Error")
 ## https://example.com/?x=27&y=3
